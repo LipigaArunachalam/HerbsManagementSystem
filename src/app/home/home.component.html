@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="product" *ngFor="let product of products">
+      <img [src]="product.image" [alt]="product.name">
+      <h2>{{ product.name }}</h2><br/>
+      <p>Price: ${{ product.price }}</p>
+      <button (click)="addToCart(product)">Add to Cart</button>
+    </div>
+  </div>
+  

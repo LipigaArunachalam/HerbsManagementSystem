@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #20681e63, #116e3e67);
+  padding: 14px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #ff6600; /* Change color to a vibrant orange on hover */
+  transform: scale(1.1); /* Slightly enlarge the link */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a popping effect */
+}
+
+a:active {
+  transform: scale(1); /* Reset the scale when the link is clicked */
+  color: #cc5200; /* Slightly darker orange when active */
+}
+
+
+
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0 14px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+ 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a popping effect */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a popping effect */
+}

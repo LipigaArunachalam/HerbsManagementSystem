@@ -1,0 +1,36 @@
+<div class="payment-container">
+    <h1>Payment Details</h1>
+    <form #paymentForm="ngForm" (ngSubmit)="onSubmit(paymentForm)">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" ngModel required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="paymentMode">Payment Mode:</label>
+        <select id="paymentMode" name="paymentMode" ngModel required>
+          <option value="Credit Card">Credit Card</option>
+          <option value="Debit Card">Debit Card</option>
+          <option value="Cash on Delivery">Cash on Delivery</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="deliveryDate">Expected Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate" ngModel required>
+      </div>
+      <h2>Order Summary</h2>
+      <div *ngFor="let item of cartItems">
+        <p>{{ item.name }} - Rs. {{ item.price }}</p>
+      </div>
+      <h3>Total: Rs. {{ totalAmount }}</h3>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+  

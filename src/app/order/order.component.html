@@ -1,0 +1,17 @@
+<div class="order-container">
+  <h1>Order Confirmation</h1>
+  <div *ngIf="orderDetails">
+    <h2>Customer Details</h2>
+    <p>Name: {{ orderDetails.customer.name }}</p>
+    <p>Phone Number: {{ orderDetails.customer.number }}</p>
+    <p>Address: {{ orderDetails.customer.address }}</p>
+    <p>Payment Mode: {{ orderDetails.customer.paymentMode }}</p>
+    <p>Expected Delivery Date: {{ orderDetails.customer.deliveryDate }}</p>
+    <h2>Order Summary</h2>
+    <div *ngFor="let item of orderDetails.items">
+      <p>{{ item.name }} - Rs. {{ item.price }}</p>
+    </div>
+    <h3>Total: Rs. {{ orderDetails.totalAmount }}</h3>
+    <button (click)="goHome()">OK</button>
+  </div>
+</div>

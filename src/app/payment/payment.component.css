@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #61de7a;
+}
+
+.payment-container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #edf4f497;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.payment-container h1, .payment-container h2, .payment-container h3 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resize but disable horizontal resize */
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.payment-container .order-summary {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.payment-container .order-summary p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.payment-container .order-summary h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
